@@ -9,17 +9,18 @@ body {
     background-position: center;
 }
 
-.row img {
+.row {
   display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
+  justify-content: center;
+  gap: 20px; /* space between images */
+  flex-wrap: wrap; /* allows wrapping on small screens */
 }
 
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
+.row img {
+  width: 30%;
+  height: auto;
+  display: block;
 }
-
 
 a:link {
     color: black
