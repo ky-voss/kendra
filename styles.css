@@ -4,7 +4,6 @@ body {
     text-align:center;
     color: black;
     background: white;
-    background-image: url("https://dl.dropboxusercontent.com/scl/fi/xyze9nq0kwk25ubseno9j/Sam-Cope-Background.png?rlkey=j3m1teh0vzj3a8vlv20xh5b7p&e=1")
     background-size: 100%;
     background-repeat: none;
     background-position: center;
@@ -120,33 +119,11 @@ a:visited {
   transition: transform 0.1s ease;
 }
 
-.album-card:hover img {
+.head:hover {
   transform: scale(1.50);
 }
 
-.album-info {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  padding: 10px;
-  background: linear-gradient(transparent, rgba(0,0,0,0.85));
-  color: white;
-}
-
-.album-info h3 {
-  margin: 0;
-  font-size: 16px;
-}
-
-.artist {
-  font-size: 14px;
-  opacity: 0.85;
-}
 
 
 
-.role {
-  font-size: 12px;
-  opacity: 1;
-}
 
