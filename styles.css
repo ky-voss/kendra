@@ -8,6 +8,26 @@ body {
     
 }
 
+.header {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: auto;
+
+
+.portfolio {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: auto;
+}
+
+.music {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: auto;
+}
 .row {
   display: flex;
   justify-content: center;
