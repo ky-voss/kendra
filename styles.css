@@ -29,10 +29,12 @@ img {
     display: flex;
     align-items: center;
     gap: 16px;
+    justify-content: center;
 }
 
 .brand img {
     width: min(49.5vw, 620px);
+    justify-content: center;
 }
 
 .banner {
@@ -52,25 +54,7 @@ img {
     font-size: 0.95rem;
 }
 
-.navigation ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-}
 
-.navigation a {
-    color: #111;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.navigation a:hover,
-.navigation a:focus {
-    color: #d63384;
-}
 
 .main-content {
     max-width: 1200px;
@@ -81,6 +65,7 @@ img {
 .hero {
     text-align: center;
     margin-bottom: 40px;
+    justify-content: center;
 }
 
 .hero img {
@@ -93,6 +78,7 @@ img {
     width: min(45vw, 560px);
     margin: 24px auto 0;
     display: block;
+    justify-content: center;
 }
 
 section {
@@ -147,12 +133,6 @@ section h2 {
         padding: 20px 20px;
     }
 
-    .navigation ul {
-        flex-direction: column;
-        gap: 14px;
-        width: 100%;
-        max-width: 320px;
-    }
 
     .main-content {
         padding: 24px 16px;
@@ -164,6 +144,7 @@ section h2 {
 
     .hero {
         margin-bottom: 32px;
+        justify-content: center;
     }
 }
 
