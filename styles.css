@@ -1,99 +1,198 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 body {
-    margin:0;
+    margin: 0;
     font-family: Arial, sans-serif;
-    text-align:center;
-    color: black;
-    background: white;
-    background-size: 100%;
-    
+    color: #111;
+    background: #f9f7f2;
+    line-height: 1.6;
 }
 
-.header {
-    display: flex;
-    justify-content: center;
-    width: 50%;
+img {
+    max-width: 100%;
     height: auto;
-
-
-.portfolio {
-    display: flex;
-    justify-content: center;
-    width: 50%;
-    height: auto;
+    display: block;
 }
 
-.music {
+.site-header {
     display: flex;
-    justify-content: center;
-    width: 50%;
-    height: auto;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 24px 20px;
+    background: #fff;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
 }
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.brand img {
+    width: min(49.5vw, 620px);
+    border-radius: 12px;
+}
+
+.banner {
+    width: min(45vw, 560px);
+    margin: 0 auto;
+    display: block;
+}
+
+.brand h1 {
+    margin: 0;
+    font-size: 1.7rem;
+}
+
+.brand p {
+    margin: 4px 0 0;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.navigation a {
+    color: #111;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navigation a:hover,
+.navigation a:focus {
+    color: #d63384;
+}
+
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px 20px;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.hero img {
+    width: 100%;
+    max-width: 900px;
+    border-radius: 18px;
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.08);
+}
+
+.banner {
+    width: min(45vw, 560px);
+    margin: 24px auto 0;
+    display: block;
+}
+
+section {
+    margin-bottom: 48px;
+}
+
+section h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
 .row {
-  display: flex;
-  justify-content: center;
-  gap: 20px; /* space between images */
-  flex-wrap: wrap; /* allows wrapping on small screens */
+    display: grid;
+    grid-template-columns: repeat(3, minmax(220px, 1fr));
+    gap: 20px;
 }
 
 .row img {
-  width: 30%;
-  height: 30%;
-  display: block;
+    width: 100%;
+    border-radius: 16px;
+    object-fit: cover;
 }
 
-a:link {
-    color: black
+.music {
+    display: grid;
+    justify-items: center;
+    gap: 20px;
 }
 
-h1 {
-    color: black;
+.music h2 {
+    margin-top: 0;
 }
 
-a:hover {
-    color: pink;
+.contact {
+    background: #fff;
+    padding: 28px;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+    text-align: center;
 }
 
-a:visited {
-    text-decoration: none;
-    color: black;
+.contact p {
+    margin: 0;
+    color: #555;
 }
 
-/* Main wrapper */
-.main{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    color: black;
+.site-footer {
+    padding: 20px;
+    text-align: center;
+    color: #777;
+    background: #fff;
 }
 
-/* Navigation */
-
-.navigation ul{
-    list-style:none;
-    padding:0;
-    margin:20px 0;
-    color: black;
-
-    display:flex;
-    justify-content:center;
-    gap:30px;
+@media (max-width: 900px) {
+    .row {
+        grid-template-columns: repeat(2, minmax(180px, 1fr));
+    }
 }
 
-.navigation:hover{
-    font-weight:500;
-    color: pink;
+@media (max-width: 720px) {
+    .site-header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 20px 16px;
+    }
+
+    .navigation ul {
+        flex-direction: column;
+        gap: 14px;
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .main-content {
+        padding: 24px 16px;
+    }
+
+    section {
+        margin-bottom: 36px;
+    }
+
+    .hero {
+        margin-bottom: 32px;
+    }
 }
 
+@media (max-width: 620px) {
+    .row {
+        grid-template-columns: 1fr;
+    }
 
-/* Sections */
-
-
-
-.container {
-    text-align:center;
-    max-width:900px;
-    margin:0 auto;
-    padding:20px;
+    .site-footer {
+        padding: 16px;
+    }
 }
 
 
